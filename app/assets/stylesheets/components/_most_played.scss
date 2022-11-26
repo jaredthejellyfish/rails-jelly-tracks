@@ -1,0 +1,41 @@
+.most-played-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+
+  // remove this line, just for testing.
+  background-color: #161920;
+}
+
+// remove from here when stats sincro with user
+.bg-player {
+  width: 700px;
+  margin-left: 20px;
+}
+// remove end
+
+.most-played-card {
+  // remove this 2 lines, just for testing
+  margin-left: 20px;
+  margin-top: 20px;
+
+  position: absolute;
+  width: 350px;
+  padding: 40px;
+  border: 2.2px solid #F53B5D;
+  border-radius: 17px;
+  color: white;
+
+  // esto es lo que hace el efecto difuminado. Solo funciona si hay contenido debajo.
+  // al igual que blur, también se puede utilizar brightness, sepia, invert..
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+  backdrop-filter: blur(2.5px);
+}
+
+.most-played-card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+}
