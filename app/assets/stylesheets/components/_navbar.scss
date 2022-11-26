@@ -1,12 +1,70 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+.navbar {
+  background-color: #161920;
+  height: 80px;
+  border-bottom: 1px solid #282C39;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.navbar > .links {
+  display: flex;
+  flex-direction: row;
+  padding: 1;
+  gap: 70px;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar > .links > .link {
+  color: #9697b0;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  font-family: supria-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar > .links > .link > a {
+  color: #ffffff;
+}
+
+.online-status {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 22.5px;
+  gap: 10px;
+}
+
+.navbar > .profile > .online-status > p {
+  color: white;
+  font-family: supria-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.activity-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.notification-icon {
+  width: 21px;
+  height: 22px;
+  margin-left: 50px;
+}
+
+.profile-icon {
   width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 20px;
 }

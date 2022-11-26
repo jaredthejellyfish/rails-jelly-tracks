@@ -10,3 +10,25 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/rank_section";
+@import "components/navbar";
+
+// Fonts
+@import url("https://use.typekit.net/kzz0aus.css");
+
+html {
+  //background-color: #161920;
+  min-width: 980px;
+}
+
+a:link, a:hover, a:visited {
+  text-decoration: none;
+}
+
+.small-text {
+  color: #9697b0;
+  font-family: supria-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+}

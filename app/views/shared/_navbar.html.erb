@@ -1,0 +1,33 @@
+<div class="navbar">
+  <div class="links">
+    <div class="link">
+      <%= image_tag "red_bubble.svg" %>
+      <%= link_to "OVERVIEW", "#" %>
+    </div>
+    <div class="link">
+      <%= image_tag "gray_bubble.svg" %>
+      <%= link_to "MATCH HISTORY", "#" %>
+    </div>
+    <div class="link">
+      <%= image_tag "gray_bubble.svg" %>
+      <%= link_to "PERFORMANCE", "#" %>
+    </div>
+    <div class="link">
+      <%= image_tag "gray_bubble.svg" %>
+      <%= link_to "AGENTS", "#" %>
+    </div>
+  </div>
+  <div class= "profile">
+    <div class= "online-status">
+      <%= image_tag "green_status_icon.svg", class: "activity-icon" %>
+      <%= tag.p "ONLINE"%>
+    </div>
+    <div class="profile-images">
+      <%= image_tag "bell.png", class: "notification-icon"%>
+
+        <%= link_to image_tag("profile.png", class: "profile-icon"), "#" %>
+
+    </div>
+
+  </div>
+</div>
