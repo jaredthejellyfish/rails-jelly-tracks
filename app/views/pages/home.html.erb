@@ -1,3 +1,15 @@
-<div style="width:50%;">
-<%= render "shared/rank_section" %>
-</div>
+  <div class="display-card">
+    <%= render "shared/navbar" %>
+    <div class=content-container>
+      <%= render "shared/sidebar" %>
+      <div class="content">
+        <div class="gamemode-container">
+          <%= render "shared/gamemode_selector" %>
+        </div>
+        <%= render "shared/rank_section" %>
+        <%= render "shared/graph_cards" %>
+        <div class="accuracy-container">
+          <%= render "shared/accuracy" %>
+        </div>
+      </div>
+    </div>

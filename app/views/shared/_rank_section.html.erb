@@ -1,13 +1,13 @@
 <div class="rank-container">
-  <%= image_tag @mmr.images["large"], class: "rank-image" %>
+<%= image_tag @mmr.images["large"], class: "rank-image" %>
 
   <div class="tier-container">
-  <%= tag.p "#{@mmr.name}##{@mmr.tag}", class: "name"%>
-    <%= tag.p @mmr.currenttierpatched.upcase, class: "tier"%>
-    <progress class="progress" value="<%= @mmr.ranking_in_tier %>" max="100"></progress>
+    <%= tag.p "#{@mmr.name}##{@mmr.tag}", class: "name" %>
+    <%= tag.p @mmr.currenttierpatched.upcase, class: "tier" %>
+ <progress class="progress" value="<%= @mmr.ranking_in_tier %>" max="100"></progress>
     <div class="bar-footer">
       <p class="small-text">Rank rating</p>
-      <%= tag.p "#{@mmr.ranking_in_tier}/100", class: "small-text"%>
-    </div>
+      <%= tag.p @mmr.ranking_in_tier > 100 ? "#{@mmr.ranking_in_tier} RR" : "#{@mmr.ranking_in_tier}/100", class: "small-text" %>
+</div>
   </div>
 </div>

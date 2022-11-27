@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="104" viewBox="0 0 129 104">
+  <defs>
+    <filter id="headshot_bubble" x="9" y="0" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="headshot_bubble-2" x="9" y="0" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="bodyshot_bubble" x="9" y="39" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+    </filter>
+    <filter id="bodyshot_bubble-2" x="9" y="39" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="legshot_bubble" x="16" y="78" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+    </filter>
+    <filter id="legshot_bubble-2" x="16" y="78" width="26" height="26" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-6"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="headshot_line" x="20.25" y="3.25" width="78.5" height="19.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="bodyshot_line" x="19.25" y="42.25" width="79.5" height="19.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="legshot_line" x="26.25" y="81.25" width="72.5" height="19.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="person_outline" transform="translate(0 0.5)">
+    <path id="path1521" d="M64.4,18.728a9.364,9.364,0,1,0-9.363-9.364A9.365,9.365,0,0,0,64.4,18.728Z" transform="translate(-42.417)" fill="#282c39"/>
+    <path id="path1525" d="M11.964,90.683C5.333,90.683,0,95.444,0,101.38v25.307c0,4.919,8.18,4.919,8.18,0V103.548h1.936v63.359c0,6.578,10.893,6.384,10.893,0v-36.78h1.876v36.78c0,6.384,10.953,6.578,10.953,0V103.548h1.889v23.139c0,4.957,8.138,4.957,8.124,0V101.531c0-5.474-4.831-10.837-12.112-10.837l-19.777-.011Z" transform="translate(0 -69.889)" fill="#282c39"/>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#headshot_bubble)">
+        <g id="headshot_bubble-3" data-name="headshot_bubble" transform="translate(18 6)" fill="#f73b5d" stroke="#e33655" stroke-width="1">
+          <circle cx="4" cy="4" r="4" stroke="none"/>
+          <circle cx="4" cy="4" r="3.5" fill="none"/>
+        </g>
+      </g>
+      <circle id="headshot_bubble-4" data-name="headshot_bubble" cx="4" cy="4" r="4" transform="translate(18 5.5)" fill="#f73b5d"/>
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#headshot_bubble-2)">
+        <circle id="headshot_bubble-5" data-name="headshot_bubble" cx="4" cy="4" r="4" transform="translate(18 6)" fill="#fff"/>
+      </g>
+      <g id="headshot_bubble-6" data-name="headshot_bubble" transform="translate(18 5.5)" fill="none" stroke="#e33655" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#bodyshot_bubble)">
+        <g id="bodyshot_bubble-3" data-name="bodyshot_bubble" transform="translate(18 45)" fill="#f73b5d" stroke="#e33655" stroke-width="1">
+          <circle cx="4" cy="4" r="4" stroke="none"/>
+          <circle cx="4" cy="4" r="3.5" fill="none"/>
+        </g>
+      </g>
+      <circle id="bodyshot_bubble-4" data-name="bodyshot_bubble" cx="4" cy="4" r="4" transform="translate(18 44.5)" fill="#f73b5d"/>
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#bodyshot_bubble-2)">
+        <circle id="bodyshot_bubble-5" data-name="bodyshot_bubble" cx="4" cy="4" r="4" transform="translate(18 45)" fill="#fff"/>
+      </g>
+      <g id="bodyshot_bubble-6" data-name="bodyshot_bubble" transform="translate(18 44.5)" fill="none" stroke="#e33655" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#legshot_bubble)">
+        <g id="legshot_bubble-3" data-name="legshot_bubble" transform="translate(25 84)" fill="#f73b5d" stroke="#e33655" stroke-width="1">
+          <circle cx="4" cy="4" r="4" stroke="none"/>
+          <circle cx="4" cy="4" r="3.5" fill="none"/>
+        </g>
+      </g>
+      <circle id="legshot_bubble-4" data-name="legshot_bubble" cx="4" cy="4" r="4" transform="translate(25 83.5)" fill="#f73b5d"/>
+      <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#legshot_bubble-2)">
+        <circle id="legshot_bubble-5" data-name="legshot_bubble" cx="4" cy="4" r="4" transform="translate(25 84)" fill="#fff"/>
+      </g>
+      <g id="legshot_bubble-6" data-name="legshot_bubble" transform="translate(25 83.5)" fill="none" stroke="#e33655" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+    </g>
+    <text id="HEAD" transform="translate(91 13.5)" fill="#9697b0" font-size="13" font-family="SupriaSans-Bold, Supria Sans" font-weight="700"><tspan x="0" y="0">HEAD</tspan></text>
+    <text id="BODY" transform="translate(91 52.5)" fill="#9697b0" font-size="13" font-family="SupriaSans-Bold, Supria Sans" font-weight="700"><tspan x="0" y="0">BODY</tspan></text>
+    <text id="LEGS" transform="translate(91 91.5)" fill="#9697b0" font-size="13" font-family="SupriaSans-Bold, Supria Sans" font-weight="700"><tspan x="0" y="0">LEGS</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#headshot_line)">
+      <line id="headshot_line-2" data-name="headshot_line" x2="59" transform="translate(30 10)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="2 5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#bodyshot_line)">
+      <line id="bodyshot_line-2" data-name="bodyshot_line" x2="60" transform="translate(29 49)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="2 5"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, -0.5)" filter="url(#legshot_line)">
+      <line id="legshot_line-2" data-name="legshot_line" x2="53" transform="translate(36 88)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="2 5"/>
+    </g>
+  </g>
+</svg>

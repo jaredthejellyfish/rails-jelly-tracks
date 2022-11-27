@@ -1,0 +1,26 @@
+.gamemode-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.gamemode-selector > .link {
+
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-family: supria-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.gamemode-selector > .link > a {
+  color: #9495AD;
+}
+
+.gamemode-selector > .highlighted {
+  border: 1px solid #F73B5D;
+}
+
+.gamemode-selector> .highlighted > a {
+  color: #F73B5D;
+}

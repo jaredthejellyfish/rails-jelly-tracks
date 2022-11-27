@@ -1,0 +1,15 @@
+.graph-cards-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  gap: 23px;
+
+}
+
+.graph-card {
+width: 230px;
+height: 100%;
+background-color: #1D202A;
+border-radius: 20px;
+}
