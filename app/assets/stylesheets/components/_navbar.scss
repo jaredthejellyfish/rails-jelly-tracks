@@ -8,9 +8,10 @@
 }
 
 .logo {
-  width: 165px;
+  width: 212px;
   height: 100%;
   margin-right: 25px;
+  transition: 0.8s ease;
 }
 
 .navbar {
@@ -95,6 +96,10 @@
   margin-left: 20px;
 }
 
-.navbar-container > .logo {
-  width: 212px;
+@media (max-width: 1485px) {
+  .logo {
+   width: 50px;
+   transition: 0.8s ease;
+  }
+
 }
