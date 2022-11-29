@@ -1,7 +1,6 @@
 // Specific CSS for your home-page
 .content {
-  width: 100%;
-  padding-right: 35px;
+  min-width: 1245px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -10,4 +9,12 @@
 .gamemode-container {
   width: 100%;
   padding: 20px 0 10px 0;
+  border-top: 1px solid #282c39;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
 }

@@ -4,5 +4,9 @@
 
 import { application } from "./application"
 
-import HelloController from "./hello_controller"
-application.register("hello", HelloController)
+
+import TiltController from "./tilt_controller"
+application.register("tiltable", TiltController)
+
+import ContentLoader from './content-loader_controller'
+application.register('content-loader', ContentLoader)

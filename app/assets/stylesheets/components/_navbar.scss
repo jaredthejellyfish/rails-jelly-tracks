@@ -4,19 +4,18 @@
   height: 80px;
   background-color: #161920;
   padding-left: 0px;
-  padding-right: 35px;
+  width: 100%;
 }
 
 .logo {
-  width: 212px;
+  min-width: 200px;
   height: 100%;
   margin-right: 25px;
-  transition: 0.8s ease;
+  transition: 0.7s ease;
 }
 
 .navbar {
-  border-bottom: 1px solid #282c39;
-  width: 100%;
+  min-width: 1245px;
 }
 
 .navbar > .links {
@@ -96,10 +95,10 @@
   margin-left: 20px;
 }
 
-@media (max-width: 1485px) {
+@media (max-width: 1585px) {
   .logo {
-   width: 50px;
-   transition: 0.8s ease;
+    min-width: 60px;
+    width: 60px;
+    transition: 0.7s ease;
   }
-
 }

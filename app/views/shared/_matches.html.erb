@@ -1,0 +1,53 @@
+<div class="matches-container">
+  <h3 class="matches-title">Recent Matches:</h3>
+  <div class="matches">
+    <% @matches.matches[0, 4].each do |match| %>
+      <% player = match.player(@account.name, @account.tag)[0] %>
+
+      <div data-tiltable-target="match" class="match">
+        <%= tag.div class:"match-result #{match.winning_team == player.team.downcase ? 'won' : 'lost'}" %>
+        <%= image_tag Valorant::Misc.content.agent_images(player.character)[:display_icon], class: "match-pfp"%>
+        <div class="map-name-container">
+          <%= tag.p match.map, class: "map-name" %>
+          <%= tag.p match.mode.split.first, class: "match-mode" %>
+        </div>
+        <div class="match-item-container score">
+          <div class="match-item-title">SCORE</div>
+          <div clas="match-item-valuer">
+            <%= tag.span player.team == 'Blue' ? match.blue_rounds_won : match.red_rounds_won, class: "match-item-title green" %>
+            <span class="match-item-title">:</span>
+            <%= tag.span player.team == 'Red' ? match.blue_rounds_won : match.red_rounds_won, class: "match-item-title red" %>
+          </div>
+        </div>
+        <div class="match-item-container kd">
+          <div class="match-item-title">K/D</div>
+          <div clas="match-item-value">
+            <%= tag.span player.kd, class: "match-item-title white" %>
+          </div>
+        </div>
+        <div class="match-item-container kda">
+          <div class="kda-grid">
+            <div class="kills match-item-title">K</div>
+            <div class="blank1"> </div>
+            <div class="deaths match-item-title">D</div>
+            <div class="blank2"> </div>
+            <div class="assists match-item-title">A</div>
+            <%= tag.div player.kills, class: "kills-num match-item-title white" %>
+            <div class="slash1 match-item-title slash">/</div>
+            <%= tag.div player.deaths, class: "deaths-num match-item-title white" %>
+            <div class="slash2 match-item-title slash">/</div>
+            <%= tag.div player.assists, class: "assists-num match-item-title white" %>
+          </div>
+        </div>
+        <div class="match-info">
+          <% date = DateTime.parse(match.game_start_patched) %>
+          <%= tag.div date.strftime("%b %d, %R"), class: "match-info-date" %>
+          <%= link_to "#" do  %>
+            <span class="match-info-button">VIEW DETAILS <span class="match-info-arrow">→</span></span>
+          <% end %>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
+</div>

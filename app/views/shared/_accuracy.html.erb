@@ -1,23 +1,25 @@
-<div class= "accuracy">
-  <div class= "accuracy-header">
-    <%= image_tag "target_icon.svg", class: "target-icon" %>
-    <h3 class="accuracy-title">Accuracy</h3>
-  </div>
-  <div class="accuracy-content">
-    <%= inline_svg_tag("accuracy-target.svg", class: "accuracy-person") %>
-    <div class="accuracy-grid">
-      <%# Head: %>
-      <%= tag.div "#{((@head_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage'%>
-      <%= tag.div @head_shots, class: "grid-item percentage" %>
-      <%= tag.div "HITS", class: "grid-item percentage hits-label" %>
-      <%# Body: %>
-      <%= tag.div "#{((@body_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage big'%>
-      <%= tag.div @body_shots, class: "grid-item percentage corrector-hits" %>
-      <%= tag.div "HITS", class: "grid-item percentage hits-label corrector-label" %>
-      <%# Legs: %>
-      <%= tag.div "#{((@leg_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage'%>
-      <%= tag.div @leg_shots, class: "grid-item percentage" %>
-      <%= tag.div "HITS", class: "grid-item percentage hits-label" %>
+<div class="accuracy-container">
+  <div class= "accuracy">
+    <div class= "accuracy-header">
+      <%= image_tag "target_icon.svg", class: "target-icon" %>
+      <h3 class="accuracy-title">Accuracy</h3>
+    </div>
+    <div class="accuracy-content">
+      <%= inline_svg_tag("accuracy-target.svg", class: "accuracy-person") %>
+      <div class="accuracy-grid">
+        <%# Head: %>
+        <%= tag.div "#{((@head_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage'%>
+        <%= tag.div @head_shots, class: "grid-item percentage" %>
+        <%= tag.div "HITS", class: "grid-item percentage hits-label" %>
+        <%# Body: %>
+        <%= tag.div "#{((@body_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage big'%>
+        <%= tag.div @body_shots, class: "grid-item percentage corrector-hits" %>
+        <%= tag.div "HITS", class: "grid-item percentage hits-label corrector-label" %>
+        <%# Legs: %>
+        <%= tag.div "#{((@leg_shots.to_f / @total_shots.to_f) * 100).to_i}%", class: 'grid-item percentage'%>
+        <%= tag.div @leg_shots, class: "grid-item percentage" %>
+        <%= tag.div "HITS", class: "grid-item percentage hits-label" %>
+      </div>
     </div>
   </div>
 </div>

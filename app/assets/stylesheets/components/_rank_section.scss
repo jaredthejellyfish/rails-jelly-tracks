@@ -1,60 +1,53 @@
 // Specific CSS for your rank-section
 .rank-image {
-  width: 76px;
-  height: 76px;
-  margin-right: 20px;
-  margin-top: 5px;
+	margin-top: 5px;
+	margin-right: 20px;
+	width: 76px;
+	height: 76px;
+	filter: drop-shadow(0px 10px 15px rgba(255, 255, 255, 0.1));
 }
-
 .rank-container {
-  display: flex;
-  flex-direction: row;
-  padding: 20px 20px 0px 5px;
-  background-color: #161920;
-  color: white;
+	display: flex;
+	flex-direction: row;
+	background-color: #161920;
+	padding: 20px 20px 0px 5px;
+	color: white;
 }
-
 .tier-container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-
 .tier-container > .name {
-  font-family: supria-sans, sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 26px;
-  margin: 0;
+	margin: 0;
+	font-family: supria-sans, sans-serif;
+	font-size: 26px;
+	font-weight: 800;
+	font-style: normal;
 }
-
 .tier-container > .tier {
-  font-family: supria-sans, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 18;
-  margin: 0;
+	margin: 0;
+	font-family: supria-sans, sans-serif;
+	font-size: 18;
+	font-weight: 500;
+	font-style: normal;
 }
-
 .tier-container > .progress {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 380px;
-  height: 6px;
-  margin-top: 4px;
+	margin-top: 4px;
+	width: 380px;
+	height: 6px;
+	-webkit-appearance: none;
+	appearance: none;
 }
-
 .tier-container > .progress::-webkit-progress-bar {
-  background-color: #9495AD;
+	background-color: #9495AD;
 }
-
 progress::-webkit-progress-value {
-  border-radius: 6px;
-  background-color: #F73B5D;
+	border-radius: 6px;
+	background-color: #F73B5D;
 }
-
 .bar-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 5px;
 }

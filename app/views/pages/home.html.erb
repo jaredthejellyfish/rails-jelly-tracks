@@ -1,17 +1,18 @@
-  <div class="display-card">
-    <%= render "shared/navbar" %>
-    <div class=content-container>
-      <%= render "shared/sidebar" %>
-      <div class="content">
-        <div class="gamemode-container">
-          <%= render "shared/gamemode_selector" %>
-        </div>
-        <%= render "shared/rank_section" %>
-        <%= render "shared/graph_cards" %>
-        <div class="accuracy-container">
+<div data-controller="tiltable" class="display-card">
+  <%= render "shared/navbar" %>
+  <div class=content-container>
+    <%= render "shared/sidebar" %>
+    <div class="content">
+      <div class="gamemode-container">
+        <%= render "shared/gamemode_selector" %>
+      </div>
+      <%= render "shared/rank_section" %>
+      <%= render "shared/graph_cards" %>
+      <div class= "bottom-container">
+        <div class= "accuracy-most-played-container">
           <%= render "shared/accuracy" %>
-        </div>
-        <div class="most-played-container">
           <%= render "shared/most_played" %>
+        </div>
+        <%= render "shared/matches" %>
       </div>
     </div>

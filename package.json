@@ -6,6 +6,8 @@
     "@hotwired/turbo-rails": "^7.2.4",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "tilt.js": "^1.2.1",
+    "universal-tilt.js": "^2.0.6",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
   },

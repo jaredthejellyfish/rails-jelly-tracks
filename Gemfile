@@ -46,9 +46,10 @@ gem "bootsnap", require: false
 gem "sassc-rails"
 
 # Use the Valorant API [https://github.com/jaredthejellyfish/ruby-hendriks-val]
-gem "valorant", "~> 0.1.4"
+gem "valorant", "~> 0.1.7"
 gem 'erb-formatter'
 gem 'inline_svg'
+gem 'htmlbeautifier'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
